@@ -1,0 +1,65 @@
+jails:
+  jail1:
+    world: world
+    top:
+      x: 38
+      y: 79
+      z: 268
+    bottom:
+      x: 51
+      y: 83
+      z: 259
+    tps:
+      in:
+        x: 49.58074304495124
+        y: 80.0
+        z: 265.8154698612916
+        yaw: 0.0
+        pitch: 0.0
+      free:
+        world: world
+        x: 39.45011027244109
+        y: 80.0
+        z: 264.47750546069574
+        yaw: 0.0
+        pitch: 0.0
+    cells:
+      Jail Cell:
+        tp:
+          x: 49.69999998807907
+          y: 80.0
+          z: 265.3178820401124
+          yaw: 0.0
+          pitch: 0.0
+        chest:
+          x: 43
+          y: 80
+          z: 267
+        signs:
+        - world,47.0,81.0,263.0,0.0,0.0
+        - world,45.0,81.0,263.0,0.0,0.0
+    prisoners:
+      84a216f8-bf97-39e3-bb5e-9a926ba4b08f:
+        name: enablepaying
+        muted: false
+        time: 0
+        offlinePending: true
+        toBeTransferred: false
+        jailer: MCPL_Admin
+        reason: ''
+        inventory: ''
+        armor: ''
+        previousLocation: ''
+        previousGameMode: SURVIVAL
+      5ba3b525-5a96-4b2d-8039-2c8fa997da82:
+        name: clear
+        muted: false
+        time: 0
+        offlinePending: true
+        toBeTransferred: false
+        jailer: MCPL_Admin
+        reason: ''
+        inventory: ''
+        armor: ''
+        previousLocation: ''
+        previousGameMode: SURVIVAL

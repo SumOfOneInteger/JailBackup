@@ -1,0 +1,108 @@
+# ###################
+# Jail v3.0.0-SNAPSHOT-b182 config file
+# Note: You -must- use spaces instead of tabs!
+# ###################
+system:
+  version: 3
+  debug: false
+  language: en
+  updates:
+    channel: bukkit
+    notification: true
+    time: 1h
+  useBukkitTimer: true
+storage:
+  type: sqlite
+  mysql:
+    host: localhost
+    port: '3306'
+    username: root
+    password: password
+    database: minecraft
+    prefix: j3_
+jailing:
+  during:
+    blockBreakPenalty: 15
+    blockBreakProtection: true
+    blockBreakWhiteList:
+    - crops
+    blockPlacePenalty: 10
+    blockPlaceProtection: true
+    blockPlaceWhiteList:
+    - crops
+    cellsign:
+    - '%player%'
+    - '%timeinminutes% mins'
+    - with a reason
+    - '%reason%'
+    commandPenalty: 10
+    commandProtection: true
+    commandWhitelist: []
+    countDownTimeWhileOffline: false
+    cropTramplingPenalty: 5m
+    cropTramplingProtection: true
+    foodControl:
+      enabled: true
+      max: 20
+      min: 10
+    ignoreSleeping: true
+    maxAFKTime: 10m
+    movePenalty: 30
+    moveProtection: true
+    openChest: true
+    preventInteractionBlocks:
+    - wooden_door
+    - iron_door_block
+    preventInteractionBlocksPenalty: 5m
+    preventInteractionItems: []
+    preventInteractionItemsPenalty: 10
+    recieveMessages: true
+    scoreboard:
+      enabled: false
+      title: Jail Info
+      time: '&aTime:'
+  jail:
+    automaticCell: true
+    automaticMute: true
+    broadcastJailing: true
+    clothing:
+      enabled: true
+      helmet: leather_helmet~175,105,33
+      chest: leather_chestplate~175,105,33
+      legs: leather_leggings~175,105,33
+      boots: leather_boots~175,105,33
+    commands: []
+    default:
+      jail: nearest
+      time: -1
+    gameMode: adventure
+    inventory:
+      blacklist: []
+      store: true
+    log:
+      console: true
+      profile: true
+  release:
+    backToPreviousPosition: false
+    commands: []
+    restorePreviousGameMode: true
+    teleport: true
+jails:
+  endermenProtection: true
+  explosionProtection: true
+jailpay:
+  enabled: true
+  item: air
+  pricePerMinute: 10
+  priceInfinite: 9999
+jailstick:
+  enabled: false
+  sticks:
+  - torch,20,,admin
+  - stick,10,,police
+jailvote:
+  enabled: true
+  voteTimer: 60s
+  minimumYes: 5
+  reason: Jailed by players via Jail Vote
+  time: 5m

@@ -1,0 +1,6 @@
+jail2:
+  Protections:
+    EnableBlockDestroyProtection: true
+jail1:
+  Protections:
+    EnableBlockDestroyProtection: true
